@@ -46,7 +46,7 @@ export default function Contact() {
               <div>
                 <h3 className="text-xl font-bold mb-2">Email</h3>
                 <p className="text-slate-300 hover:text-white transition-colors">
-                  <a href="mailto:contato@jdreditora.com.br">contato@jdreditora.com.br</a>
+                  <a href="mailto:contato@jdreditora.com.br">contato@jaderjspinto.com</a>
                 </p>
                 <p className="text-slate-400 text-sm mt-1">
                   Respondemos em até 24 horas úteis.
@@ -62,7 +62,7 @@ export default function Contact() {
                 <h3 className="text-xl font-bold mb-2">Localização</h3>
                 <p className="text-slate-300">
                   JDR Editora<br />
-                  Brasil
+                  Rio de janeiro, Brasil
                 </p>
               </div>
             </div>
