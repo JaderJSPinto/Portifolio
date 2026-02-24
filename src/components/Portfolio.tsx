@@ -50,15 +50,27 @@ function BookCard({ book, index }: { book: Book; index: number; key?: string }) 
         />
         <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/40 transition-colors duration-300" />
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <span className="bg-white text-slate-900 px-6 py-2 rounded-full font-bold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+          <a 
+            href="https://jdreditora.com.br" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-white text-slate-900 px-6 py-2 rounded-full font-bold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 hover:bg-amber-500 hover:text-white transition-colors"
+          >
             Ver Detalhes
-          </span>
+          </a>
         </div>
       </div>
       <div className="p-6 flex flex-col flex-grow">
-        <h3 className="text-lg font-serif font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-amber-600 transition-colors" title={book.name}>
-          {book.name}
-        </h3>
+        <a 
+          href="https://jdreditora.com.br" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="group/title"
+        >
+          <h3 className="text-lg font-serif font-bold text-slate-900 mb-2 line-clamp-2 group-hover/title:text-amber-600 transition-colors" title={book.name}>
+            {book.name}
+          </h3>
+        </a>
         <p className="text-slate-600 text-sm mb-4 line-clamp-3 flex-grow leading-relaxed">
           {stripHtml(book.shortDescription)}
         </p>
